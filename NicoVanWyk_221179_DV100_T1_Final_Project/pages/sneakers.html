@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Deliverable - Nico van Wyk</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="../js/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Inder&display=swap" rel="stylesheet">
+
+    <meta author: Nico van Wyk>
+    <meta studentnumber: 221179>
+    <meta lecturer: Tsungai Katsuro>
+    <meta subject: DV100>
+
+
+</head>
+
+
+<body onload="SneakersLoad(); RandomSneaker(); MostExpensive(); LeastExpensive()">
+
+    <!-- Navigation Bar -->
+
+    <div class="nav-holder">
+
+        <!-- Logo -->
+
+        <div class="logo-div left">
+
+            <a href="index.html">
+
+                <img src="../Assets/ExampleDesign/Assets/Logo/svg/Logo_No_Slogan.svg" class="logo">
+
+            </a>
+
+        </div>
+
+        <!-- All of the hyperlinks to different sections and pages -->
+
+        <div class="left" id="filters-box">
+
+            <select name="Filters" id="filters" class="inder font-small" onchange="Filter()">
+
+                <option value="0"> No Filter </option>
+                <option value="1"> 1 Star </option>
+                <option value="2"> 2 Stars </option>
+                <option value="3"> 3 Stars </option>
+                <option value="4"> 4 Stars </option>
+                <option value="5"> 5 Stars </option>
+
+            </select>
+
+        </div>
+
+
+        <div class="nav-link left">
+
+            <a href="index.html" class="goldman font-large beige"> Home </a>
+
+        </div>
+
+
+        <div class="nav-link left">
+
+            <a href="checkout.html" class="goldman font-large beige"> Checkout Page</a>
+
+        </div>
+
+
+        <!-- Cart image -->
+
+        <div class="cart-div right">
+
+            <a href="checkout.html">
+
+                <div class="cart"></div>
+
+            </a>
+
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="nav-link right">
+
+            <input type="text" id="search-bar" placeholder="Search..." class="inder font-small">
+
+        </div>
+
+    </div>
+
+
+    <!-- Background div surrounding all content divs to provide a consistent background -->
+
+    <div class="bg-gradient" style="width: 1460px; height: 1700px;">
+
+        <!-- Rotating carousel -->
+
+        <div id="carousel">
+
+            <!-- Image 1 -->
+
+            <div class="carousel-img left" style="padding-left: 50px;">
+
+                <img src="" id="Carousel1" class="carousel-img-constraints" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div id="Carousel1-text" class="carousel-info goldman font-20">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tempora dolores, perferendis
+                    aliquid doloribus voluptatum...
+
+                </div>
+
+            </div>
+
+            <!-- Image 2 -->
+
+            <div class="carousel-img left">
+
+                <img src="" id="Carousel2" class="carousel-img-constraints" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div id="Carousel2-text" class="carousel-info font-20 goldman">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tempora dolores, perferendis
+                    aliquid doloribus voluptatum...
+
+                </div>
+
+            </div>
+
+            <!-- Image 3 -->
+
+            <div class="carousel-img left">
+
+                <img src="" id="Carousel3" class="carousel-img-constraints" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div id="Carousel3-text" class="carousel-info font-20 goldman">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tempora dolores, perferendis
+                    aliquid doloribus voluptatum...
+
+                </div>
+
+            </div>
+
+            <!-- Image 4 -->
+
+            <div class="carousel-img left">
+
+                <img src="" id="Carousel4" class="carousel-img-constraints" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div id="Carousel4-text" class="carousel-info font-20 goldman">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti tempora dolores, perferendis
+                    aliquid doloribus voluptatum...
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Button to display a random sneaker-->
+
+        <button type="submit" class="inder beige font-small" id="random-button" onclick="RandomSneaker()"> Select Random
+            Sneaker</button>
+
+        <!-- Random sneaker Image and discription -->
+
+        <div id="random-img">
+
+            <img id="js-random-img" src="" class="carousel-img-constraints left" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+            <div class="inder left font-small" id="random-info">
+
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illum, possimus dicta eius nobis aut quisquam
+                praesentium saepe rem explicabo ad eaque sunt consequatur optio distinctio quam iure, voluptatibus quo
+                unde?
+
+            </div>
+
+        </div>
+
+
+        <!-- Most expensive sneaker -->
+
+        <div id="priced-sneakers">
+
+            <div class="left" id="high-price">
+
+                <img src="" style="height: 400px; width: 500px;" id="high-price-js" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div class="priced-title goldman white font-large">Most Expensive Sneaker</div>
+
+                <div class="priced-info goldman white font-large" id="high-info-js"> Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit.
+                    Reiciendis ratione sunt tempore voluptas officiis, illo aliquam modi reprehenderit. Quas nisi, aut
+                    recusandae...</div>
+
+            </div>
+
+
+            <!-- Least expensive sneaker -->
+
+            <div class="right" id="low-price">
+
+                <img src="" style="height: 400px; width: 500px;" id="low-price-js" onclick="AddToCart(this.id)" onmouseenter="HoverEnter(this.id)" onmouseleave="HoverLeave(this.id)">
+
+                <div class="priced-title goldman white font-large"> Least Expensive Sneaker</div>
+
+                <div class="priced-info goldman white font-large" id="low-info-js"> Lorem ipsum dolor sit amet
+                    consectetur adipisicing
+                    elit.
+                    Libero
+                    sequi architecto, dolorum doloremque iure, reprehenderit dolorem ullam optio repellendus earum...
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Checkout Adder -->
+
+        <form action="" id="checkout-adder">
+
+            <!-- Title -->
+
+            <label for="" class="goldman beige font-large"> Add your sneakers for cleaning! </label>
+
+            <!-- Inputs -->
+
+            <input type="text" class="checkout-adder-input goldman font-small" id="name-surname-checkout"
+                placeholder="Name and Surname">
+
+            <input type="text" class="checkout-adder-input goldman font-small" id="email-checkout" placeholder="Email">
+
+            <select name="Sneaker-Type" id="sneaker-type" class="goldman font-small">
+
+                <option value="0"> Sneaker Type </option>
+                <option value="1"> High Tops Leather </option>
+                <option value="2"> Low Tops Leather </option>
+                <option value="3"> High Tops </option>
+                <option value="4"> Low Tops </option>
+
+            </select>
+
+            <textarea name="address" id="address" placeholder="Address" class="goldman font-small"></textarea>
+
+            <br>
+
+        </form>
+
+        <!-- Button to submit -->
+
+        <button type="submit" id="adder-submit" class="goldman brown font-small" onclick="SubmitCheckout()"> Submit
+        </button>
+
+    </div>
+
+
+    <!-- Footer with contact links -->
+
+    <div class="bottom-bar">
+
+        <div class="logo-footer left">
+
+            <img src="../Assets/ExampleDesign/Assets/Logo/svg/Logo_No_Slogan.svg" class="logo"
+                style="background-color: black;">
+
+        </div>
+
+        <div class="logo-footer left">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/instagram_logo.jpg" class="logo">
+
+        </div>
+
+        <div class="logo-footer left" style="padding-top: 23px; margin-right: 60px;">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/twitter-logo.png" class="logo" style="height: 57px;">
+
+        </div>
+
+        <div class="logo-footer left" style="padding-top: 0px;">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/email.jpg" class="email-logo">
+
+        </div>
+
+        <div class="inder white copyright-info font-small right">
+
+            Sneaky Cleaners Ⓒ 2022
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>

@@ -1,0 +1,987 @@
+/*----Fonts*/
+
+/*--Primary Font*/
+
+.goldman {
+    font-family: 'Goldman', sans-serif;
+    src: url("../Assets/Goldman,Inder/Goldman/Goldman-Regular.ttf");
+}
+
+/*--Secondary Font*/
+
+.inder {
+    font-family: 'Inder', sans-serif;
+    src: url("../Assets/Goldman,Inder/Inder/Inder-Regular.ttf");
+}
+
+/*--Standard Font Sizes*/
+
+.font-large {
+    font-size: 22px;
+}
+
+.font-small {
+    font-size: 18px;
+}
+
+.font-header {
+    font-size: 26px;
+}
+
+/*--Custom Font Sizes*/
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+
+/*----Colours*/
+
+/*--Main Colours*/
+
+.beige {
+    color: #E4D4C8;
+}
+
+.brown {
+    color: #523A28;
+}
+
+/*--Background Colours*/
+
+.yellow {
+    color: #FBE85E;
+}
+
+.blue {
+    color: #32DEF3;
+}
+
+.pink {
+    color: #F046BD;
+}
+
+/*--Other Colours*/
+
+.white {
+    color: white;
+}
+
+
+
+
+/*----Universal Styling*/
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+.bg-gradient {
+    padding-left: 50px;
+
+    background-image: linear-gradient(rgba(251, 232, 94, 1), rgba(251, 232, 94, 0.3), rgba(50, 222, 243, 0.3), rgba(50, 222, 243, 1), rgba(50, 222, 243, 0.3), rgba(240, 70, 189, 0.3), rgba(240, 70, 189, 1), rgba(240, 70, 189, 0.3));
+}
+
+
+/*--Default tag styling*/
+
+a:hover {
+    color: rgba(228, 212, 200, 0.5);
+}
+
+
+/*--All pages layout */
+
+.nav-holder {
+    width: 1510px;
+    height: 100px;
+
+    background-color: #523A28;
+}
+
+.logo-div {
+    height: 70px;
+    width: 70px;
+
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.logo {
+    height: 70px;
+    width: 70px;
+
+    background-color: #523A28;
+}
+
+.nav-link {
+    height: 100px;
+    width: auto;
+
+    padding-top: 34px;
+    padding-left: 100px;
+}
+
+.cart {
+    height: 60px;
+    width: 60px;
+
+    background-image: url("../Assets/ExampleDesign/Assets/Icons/Other/shopping-cart.svg");
+    background-repeat: no-repeat;
+
+    background-size: cover;
+}
+
+.cart-div {
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+.bottom-bar {
+    height: 100px;
+    width: 1510px;
+
+    background-color: black;
+}
+
+.logo-footer {
+    height: 70px;
+    width: 70px;
+
+    padding-left: 20px;
+    padding-top: 15px;
+
+    margin-right: 80px;
+}
+
+.email-logo {
+    height: 100px;
+    width: 100px;
+}
+
+.copyright-info {
+    padding-top: 40px;
+    padding-right: 10px;
+}
+
+#welcome-message {
+    height: 70px;
+    width: 100%;
+
+    text-align: center;
+
+    padding-top: 20px;
+}
+
+/*----Page 1 */
+
+/*--Featured Sneaker */
+
+#featured-sneaker {
+    width: 1360px;
+    height: 500px;
+}
+
+#featured-sneaker-title {
+    height: 22px;
+    width: 190px;
+
+    margin-top: -207px;
+
+    position: absolute;
+
+    background-color: rgba(189, 189, 189, 0.65);
+}
+
+#header {
+    width: 1000px;
+    height: 500px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+
+    border: 5px solid black;
+}
+
+#header-info {
+    width: 1000px;
+    height: 180px;
+
+    margin-top: -185px;
+
+    position: absolute;
+
+    background-color: rgba(189, 189, 189, 0.65);
+}
+
+#header-img {
+    width: 1000px;
+    height: 500px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    position: relative;
+}
+
+
+/*--Featured Sneaker Rotators */
+
+.featured-sneaker-rotator {
+    width: 360px;
+    height: 250px;
+}
+
+.sneaker-rotator-info {
+    height: 125px;
+    width: 350px;
+
+    background-color: rgba(189, 189, 189);
+
+    opacity: 0;
+    transition: .5s ease;
+
+    margin-left: 10px;
+    margin-top: -135px;
+}
+
+.featured-sneaker-rotator:hover .sneaker-rotator-info {
+    opacity: 0.8;
+}
+
+.border {
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+}
+
+.featured-sneaker-img {
+    width: 360px;
+    height: 250px;
+}
+
+#next-img {
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+
+    margin-left: 310px;
+    margin-top: -25px;
+
+    border-radius: 45px;
+
+    opacity: 0.75;
+
+    background-color: white;
+    background-image: url("../Assets/ExampleDesign/Assets/Icons/Other/right_arrow_icon.svg");
+}
+
+#previous-img {
+    width: 50px;
+    height: 50px;
+
+    position: absolute;
+
+    margin-left: 10px;
+    margin-top: -25px;
+
+    border-radius: 45px;
+
+    opacity: 0.75;
+
+    background-color: white;
+    background-image: url("../Assets/ExampleDesign/Assets/Icons/Other/left_arrow_icon.svg");
+}
+
+#rotator {
+    width: 360px;
+    height: 500px;
+
+    margin-top: -510px;
+}
+
+
+/*--About Us and Contact Us */
+
+.contact-label {
+    height: 33px;
+    width: 135px;
+
+    margin-left: 7px;
+    padding-top: 7px;
+
+    background-color: #E4D4C8;
+    border-radius: 45px;
+
+    text-align: center;
+}
+
+.contact-label-large {
+    height: 60px;
+    width: 135px;
+
+    margin-left: 7px;
+    padding-top: 7px;
+
+    background-color: #E4D4C8;
+    border-radius: 25px;
+
+    text-align: center;
+}
+
+#about {
+    margin-top: 80px;
+
+    height: 595px;
+    width: 1360px;
+}
+
+#about-us {
+    height: 400px;
+    width: 400px;
+
+    background-image: linear-gradient(rgba(228, 212, 200, 1), rgba(228, 212, 200, 1), rgba(228, 212, 200, 0));
+
+    border: 5px solid black;
+}
+
+#origin {
+    height: 400px;
+    width: 400px;
+
+    background-image: linear-gradient(rgba(228, 212, 200, 1), rgba(228, 212, 200, 1), rgba(228, 212, 200, 0));
+
+    border-top: 5px solid black;
+    border-right: 5px solid black;
+    border-bottom: 5px solid black;
+}
+
+#contact-us {
+    height: 510px;
+    width: 530px;
+
+    margin-top: 75px;
+    margin-left: -5px;
+
+    background-image: linear-gradient(rgba(82, 58, 40, 1), rgba(82, 58, 40, 01), rgba(82, 58, 40, 0.8), rgba(82, 58, 40, 0));
+
+    border: 5px solid black;
+}
+
+#contact-form {
+    height: 480px;
+    width: 530px;
+}
+
+#email {
+    height: 40px;
+    width: 350px;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    background-color: #E4D4C8;
+}
+
+#name {
+    height: 40px;
+    width: 350px;
+
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    background-color: #E4D4C8;
+}
+
+#subject {
+    height: 40px;
+    width: 350px;
+
+    margin-left: 20px;
+    margin-bottom: 20px;
+
+    background-color: #E4D4C8;
+}
+
+#body {
+    height: 175px;
+    width: 350px;
+
+    margin-left: 20px;
+
+    background-color: #E4D4C8;
+}
+
+#contact-submit {
+    height: 40px;
+    width: 135px;
+
+    border-radius: 45px;
+    border: 0px;
+
+    background-color: #E4D4C8;
+
+    margin-top: 20px;
+    margin-left: 200px;
+}
+
+/*--Currency Converter */
+
+#currency-converter {
+    height: 150px;
+    width: 400px;
+
+    margin-top: -145px;
+
+    background-color: #E4D4C8;
+
+    border: 5px solid black;
+}
+
+#currency-filter {
+    height: 25px;
+    width: 84px;
+
+    font-size: 18px;
+
+    border: 0px;
+}
+
+#converter-input {
+    height: 25px;
+    width: 80px;
+
+    font-size: 18px;
+
+    border: 0px;
+}
+
+#converter-input-label {
+    height: 20px;
+    width: 75px;
+
+    text-align: center;
+}
+
+#converter-label-input {
+    margin-left: 30px;
+}
+
+#converter-output {
+    height: 25px;
+    width: 95px;
+
+    border: 0px;
+}
+
+#converter-label {
+    height: 20px;
+    width: 75px;
+
+    text-align: center;
+}
+
+#converter-label-output {
+    margin-left: 30px;
+}
+
+#converter-submit {
+    height: 40px;
+    width: 135px;
+
+    border-radius: 45px;
+    border: 0px;
+
+    background-color: #523A28;
+
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+
+/*--Sneaker of the Week */
+
+#sotw {
+    height: 750px;
+    width: 1360px;
+
+    margin-top: 80px;
+
+    border: 5px solid black;
+}
+
+#sotw-button {
+    height: 45px;
+    width: 135px;
+
+    border-radius: 45px;
+
+    background-color: #523A28;
+
+    margin-top: 3px;
+    margin-left: 4px;
+}
+
+#sotw-info {
+    height: 96px;
+    width: 1000px;
+
+    margin-top: 545px;
+
+    background-color: rgba(189, 189, 189, 0.6);
+}
+
+#elements {
+    position: relative;
+}
+
+#video {
+    position: relative;
+}
+
+#border-top {
+    height: 60px;
+    width: 1360px;
+
+    margin-top: -605px;
+
+    background-color: black;
+
+    position: relative;
+}
+
+#border-bottom {
+    height: 60px;
+    width: 1360px;
+
+    margin-top: -60px;
+
+    background-color: black;
+
+    position: relative;
+}
+
+
+
+
+/*----Page 2*/
+
+/*--Navbar Differeces*/
+
+#filters {
+    height: 45px;
+    width: 150px;
+
+    text-align: center;
+
+    background-color: #E4D4C8;
+}
+
+#filters-box {
+    padding-left: 100px;
+    padding-top: 25px;
+}
+
+#search-bar {
+    height: 45px;
+    width: 290px;
+
+    border-top-left-radius: 45px;
+    border-bottom-left-radius: 45px;
+
+    margin-top: -7px;
+    margin-right: 30px;
+
+    padding-left: 10px;
+
+    background-color: lightgray;
+    border: 0px solid black;
+}
+
+/*--Carousel*/
+
+.carousel-img {
+    height: 250px;
+    width: 300px;
+
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+.carousel-img-constraints {
+    height: 250px;
+    width: 300px;
+}
+
+.carousel-info {
+    height: 125px;
+    width: 295px;
+
+    background-color: rgba(189, 189, 189, 0.7);
+
+    margin-top: -129px;
+
+    padding-left: 5px;
+
+    position: relative;
+}
+
+#carousel {
+    width: 1360px;
+
+    background-color: lavender;
+}
+
+/*--Select Random Sneaker*/
+
+#random-button {
+    height: 50px;
+    width: 150px;
+
+    margin-top: 45px;
+
+    background-color: #523A28;
+
+    border-radius: 45px;
+}
+
+#random-img {
+    height: 250px;
+    width: 520px;
+
+    padding-right: 20px;
+    padding-top: 50px;
+}
+
+#random-info {
+    height: 250px;
+    width: 210px;
+
+    padding-left: 5px;
+    padding-right: 5px;
+
+    background-color: rgba(120, 120, 120, 0.5);
+}
+
+
+/*--Highest and Lowest Priced Sneakers*/
+
+.priced-title {
+    width: 300px;
+    height: 23px;
+
+    background-color: rgba(120, 120, 120, 0.7);
+
+    margin-top: -404px;
+
+    padding-top: 2px;
+    padding-left: 5px;
+
+    position: absolute;
+}
+
+.priced-info {
+    width: 495px;
+    height: 120px;
+
+    background-color: rgba(120, 120, 120, 0.7);
+
+    margin-top: -124px;
+    padding-left: 5px;
+
+    position: absolute;
+}
+
+#priced-sneakers {
+    width: 1150px;
+    height: 400px;
+
+    margin-top: 45px;
+}
+
+#high-price {
+    width: 500px;
+    height: 400px;
+
+    background-color: #E4D4C8;
+}
+
+#low-price {
+    width: 500px;
+    height: 400px;
+
+    background-color: #E4D4C8;
+}
+
+
+/*--Form to Add Item to Checkout*/
+
+.checkout-adder-input {
+    height: 25px;
+    width: 305px;
+
+    background-color: #E4D4C8;
+
+    border: 0px solid black;
+
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#checkout-adder {
+    height: 410px;
+    width: 340px;
+
+    background-image: linear-gradient(rgb(82, 58, 40, 1), rgb(82, 58, 40, 0.8), rgb(82, 58, 40, 0.3));
+
+    margin-top: 45px;
+
+    text-align: center;
+}
+
+#sneaker-type {
+    height: 30px;
+    width: 305px;
+
+    background-color: #E4D4C8;
+
+    border: 0px solid black;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#address {
+    height: 135px;
+    width: 305px;
+
+    background-color: #E4D4C8;
+}
+
+#adder-submit {
+    height: 35px;
+    width: 135px;
+
+    margin-top: -50px;
+    margin-left: 100px;
+
+    position: absolute;
+
+    border-radius: 45px;
+    border: 0px solid black;
+
+    background-color: #E4D4C8;
+}
+
+
+/*----Page 3*/
+
+/*--Background Change*/
+
+#bg-gradient-checkout {
+    padding-left: 250px;
+    padding-top: 45px;
+
+    background-image: linear-gradient(rgba(228, 212, 200, 1), rgba(228, 212, 200, 0.7), rgba(82, 58, 41, 0.7), rgba(82, 58, 41, 1));
+}
+
+/*--Checkout Form*/
+
+.checkout-item {
+    height: 150px;
+    width: 400px;
+
+    border: 5px solid black;
+
+    margin-left: -5px;
+    margin-top: -7px;
+}
+
+.checkout-img {
+    height: 150px;
+    width: 200px;
+
+    border: 5px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+
+    margin-right: 5px;
+    margin-top: -7px;
+}
+
+.checkout-img-constraints {
+    height: 150px;
+    width: 195px;
+
+    margin-left: -5px;
+}
+
+.price {
+    height: 25px;
+    width: 90px;
+
+    background-color: rgba(128, 128, 128, 0.6);
+
+    position: absolute;
+
+    margin-top: -33px;
+    margin-left: 105px
+}
+
+.days-to-clean {
+    height: 25px;
+    width: 80px;
+
+    background-color: rgba(128, 128, 128, 0.6);
+
+    position: absolute;
+
+    margin-top: -33px;
+    margin-left: 25px;
+}
+
+.checkout-item-title {
+    height: 25px;
+    width: 350px;
+
+    text-align: left;
+}
+
+.checkout-item-body {
+    height: 25px;
+    width: 350px;
+
+    text-align: left;
+}
+
+#checkout-form {
+    height: 500px;
+    width: 600px;
+
+    border: 5px solid black;
+
+    background-color: rgba(128, 128, 128, 0.3);
+
+    font-size: 28px;
+    text-align: center;
+}
+
+#cart-submit {
+    height: 75px;
+    width: 600px;
+
+    background-color: rgba(128, 128, 128, 0.3);
+
+    border: 5px solid black;
+}
+
+#checkout-submit {
+    height: 45px;
+    width: 145px;
+
+    margin-left: 240px;
+    margin-top: 20px;
+
+    border-radius: 45px;
+    border: 4px solid black;
+
+    background-color: lightgray;
+}
+
+#checkout-up {
+    width: 35px;
+    height: 35px;
+
+    margin-left: 565px;
+    margin-top: -78px;
+
+    border-radius: 45px;
+
+    opacity: 1;
+
+    background-color: white;
+}
+
+#checkout-up-img {
+    height: 35px;
+    width: 35px;
+
+    transform: rotate(270deg);
+}
+
+#checkout-down {
+    width: 35px;
+    height: 35px;
+
+    margin-left: 565px;
+    margin-top: 1px;
+
+    border-radius: 45px;
+
+    opacity: 1;
+
+    background-color: white;
+}
+
+#checkout-down-img {
+    height: 35px;
+    width: 35px;
+
+    transform: rotate(90deg);
+}
+
+#checkout-full {
+    height: 600px;
+    width: 600px;
+}
+
+/*--Discount Form*/
+
+.discount-text {
+    height: 50px;
+    width: 320px;
+
+    text-align: center;
+}
+
+#discount-page {
+    height: 320px;
+    width: 320px;
+
+    background-color: rgba(128, 128, 128, 0.3);
+
+    border: 5px solid black;
+
+    margin-left: 100px;
+}
+
+#discount-enter {
+    height: 60px;
+    width: 320px;
+
+    text-align: center;
+
+    margin-top: 80px;
+}
+
+#discount-input {
+    height: 22px;
+    width: 245px;
+
+    background-color: lightgray;
+
+    border: 3.5px solid black;
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Deliverable - Nico van Wyk</title>
+
+    <link rel="stylesheet" href="../css/main.css">
+
+    <script src="../js/index.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Goldman&family=Inder&display=swap" rel="stylesheet">
+
+    <meta author: Nico van Wyk>
+    <meta studentnumber: 221179>
+    <meta lecturer: Tsungai Katsuro>
+    <meta subject: DV100>
+
+
+</head>
+
+
+<body onload="HomeLoad(); CurrencyChange()">
+
+    <!-- Navigation Bar -->
+
+    <div class="nav-holder">
+
+        <!-- Logo -->
+
+        <div class="logo-div left">
+
+            <a href="index.html">
+
+                <img src="../Assets/ExampleDesign/Assets/Logo/svg/Logo_No_Slogan.svg" class="logo">
+
+            </a>
+
+        </div>
+
+        <!-- All of the hyperlinks to different sections and pages -->
+
+        <div class="nav-link left">
+
+            <a href="#about" class="goldman font-large beige"> About & Contact Us</a>
+
+        </div>
+
+        <div class="nav-link left">
+
+            <a href="#sotw" class="goldman font-large beige"> Sneaker Of The Week</a>
+
+        </div>
+
+        <div class="nav-link left">
+
+            <a href="sneakers.html" class="goldman font-large beige"> Sneakers</a>
+
+        </div>
+
+        <div class="nav-link left">
+
+            <a href="checkout.html" class="goldman font-large beige"> Checkout Page</a>
+
+        </div>
+
+        <!-- Cart image -->
+
+        <div class="cart-div right">
+
+            <a href="checkout.html">
+
+                <div class="cart"></div>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <!-- Background div surrounding all content divs to provide a consistent background -->
+
+    <div class="bg-gradient" style="width: 1460px; height: 2145px;">
+
+        <!-- Welcome Message -->
+
+        <div id="welcome-message">
+
+            <p class="goldman font-large">Welcome to Sneaky Cleaners, the home of the best sneaker cleaning service in
+                the world!</p>
+
+        </div>
+
+        <!-- Featured Sneaker -->
+
+        <div id="featured-sneaker">
+
+            <!-- Header Image and Header Info -->
+
+            <div id="header" onmouseenter="HeaderEnter()" onmouseleave="HeaderLeave()">
+
+                <img src="" id="header-img" onclick="AddToCart(this.id)">
+
+                <div id="featured-sneaker-title" class="inder font-large"> Featured Sneaker:</div>
+
+                <div id="header-info" class="inder font-large">
+
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tenetur labore temporibus
+                    possimus illum aut eaque fuga. Nam, modi, voluptatum minima quas neque et doloribus labore
+                    voluptatibus eveniet facere laborum.
+
+                </div>
+
+            </div>
+
+            <!-- Rotating Featured Sneakers -->
+
+            <div id="rotator" class="right">
+
+                <!-- Rotator 1 -->
+
+                <div class="featured-sneaker-rotator">
+
+                    <img src="" id="f-s-rotator1" class="featured-sneaker-img border">
+
+                    <div id="f-s-rotator1-text" class="sneaker-rotator-info inder font-20">
+                    </div>
+
+                </div>
+
+                <!-- Rotator controls -->
+
+                <div id="previous-img" onclick="PreviousImg()"></div>
+
+                <div id="next-img" onclick="NextImg()"></div>
+
+                <!-- Rotator 2 -->
+
+                <div class="featured-sneaker-rotator">
+
+                    <img id="f-s-rotator2" style="border-bottom: 5px solid black;" class="featured-sneaker-img border"
+                        src="">
+
+                    <div id="f-s-rotator2-text" class="sneaker-rotator-info inder font-20">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- About And Contact Us Section containing currency converter as well-->
+
+        <div id="about">
+
+            <!-- About and origins-->
+
+            <div id="about-and-origins-row">
+
+                <!-- About us -->
+
+                <div id="about-us" class="left">
+
+                    <div class="goldman font-large" style="text-align: center;">
+
+                        About Us:
+
+                    </div>
+
+                    <div class="inder font-20">
+
+                        Sneaky Cleaners is the number one sneaker cleaning company, with specialised machinery to make
+                        your sneakers cleaner than ever before. No matter the brand, no matter the state, we will be
+                        able to strike those cursed, horrid pieces of dirt and grime from your shoes.
+
+                    </div>
+
+                </div>
+
+                <!-- Origins -->
+
+                <div id="origin" class="left">
+
+                    <div class="goldman font-large" style="text-align: center;">
+
+                        Origin:
+
+                    </div>
+
+                    <div class="inder font-20">
+
+                        Sneaky Cleaners was started by a young man named John Doe, who started the idea of an online
+                        sneaker cleaning company in the year 2009, and through yeaars of effort made his idea a reality
+                        in 2017. Our core concepts still stand: anonymity and effectivity. We strive to sell our
+                        services at an affordable price, and take the effectivity of our work very seriously.
+
+                    </div>
+
+                </div>
+
+                <!-- Contact Us Form -->
+
+                <div id="contact-us" class="left">
+
+                    <!-- Title -->
+
+                    <div class="goldman beige font-header" style="text-align: center;">
+
+                        Contact Us:
+
+                    </div>
+
+                    <!-- Inputs -->
+
+                    <div id="contact-form">
+
+                        <form action="">
+
+                            <div id="input-row-1">
+
+                                <div class="contact-label goldman font-large brown left">
+
+                                    Email
+
+                                </div>
+
+                                <input type="text" name="email-input" id="email" class="left goldman font-large brown">
+
+                            </div>
+
+                            <div id="input-row-2">
+
+                                <div class="contact-label-large goldman font-large brown left">
+
+                                    Name and Surname
+
+                                </div>
+
+                                <input type="text" name="name-input" id="name" class="left goldman font-large brown">
+
+                            </div>
+
+                            <div id="input-row-3">
+
+                                <div class="contact-label goldman font-large brown left">
+
+                                    Subject
+
+                                </div>
+
+                                <input type="text" name="subject-input" id="subject"
+                                    class="left goldman font-large brown">
+
+                            </div>
+
+                            <div id="input-row-4">
+
+                                <div class="contact-label goldman font-large brown left">
+
+                                    Body
+
+                                </div>
+
+                                <textarea name="body-input" id="body" cols="30" rows="10"
+                                    class="left goldman font-large brown"></textarea>
+
+                            </div>
+
+                        </form>
+
+                        <!-- Button to submit contact form -->
+
+                        <button type="submit" id="contact-submit" class="inder brown font-header" onclick="submit()">
+
+                            Submit
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Currency Converter -->
+
+            <div id="currency-converter" class="left">
+
+                <!-- Title -->
+
+                <div class="goldman font-large brown" style="text-align: center;">
+                    Currency Converter
+                </div>
+
+                <br>
+
+                <!-- Input -->
+
+                <div id="converter-label-input" class="left">
+
+                    <div id="converter-input-label">
+
+                        <select name="Currency" id="currency-filter" class="inder font-small"
+                            onchange="CurrencyChange()">
+
+                            <option value="0"> Dollars </option>
+                            <option value="1"> Rands </option>
+
+                        </select>
+
+                    </div>
+
+                    <div>
+
+                        <input type="number" name="dollar-input" id="converter-input" class="inder brown" value="0">
+
+                    </div>
+
+                </div>
+
+                <div class="left" style="margin-left: 50px; margin-right: 20px; padding-top: 20px;">
+
+                    <label class="goldman font-large brown"> Equals </label>
+
+                </div>
+
+                <!-- Output -->
+
+                <div id="converter-label-output" class="left">
+
+                    <div id="converter-label">
+
+                        <label class="inder brown font-small" id="converter-label-js"> Rands </label>
+
+                    </div>
+
+                    <div>
+
+                        <label id="converter-output" class="inder brown font-small"> 0 </label>
+
+                    </div>
+
+                </div>
+
+                <!-- Button to convert -->
+
+                <button type="submit" id="converter-submit" class="goldman beige font-header" onclick="convert()">
+
+                    Convert
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Featured Sneaker Cleaning Video -->
+
+        <div id="sotw">
+
+            <!-- Video -->
+
+            <div id="video">
+
+                <iframe width="1360" height="600" src="https://www.youtube.com/embed/plijXdDS-g4"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+            <!-- Borders -->
+
+            <div id="border-bottom"></div>
+
+            <div id="border-top"></div>
+
+            <!-- Description -->
+
+            <div class="goldman font-20" id="sotw-info">
+                Cleaning sneakers is a hard job, but its one we do with pride and joy. In this video, we show how we
+                clean a pair of white sneakers, as well as how we polish the leather of one of our newest arrivals.
+            </div>
+
+            <!-- Button to add to cart -->
+
+            <button type="submit" class="goldman beige font-small" id="sotw-button" onclick="SOTWCart()"> Add to
+                Cart! </button>
+
+        </div>
+
+    </div>
+
+    <!-- Footer with contact links -->
+
+    <div class="bottom-bar">
+
+        <div class="logo-footer left">
+
+            <img src="../Assets/ExampleDesign/Assets/Logo/svg/Logo_No_Slogan.svg" class="logo"
+                style="background-color: black;">
+
+        </div>
+
+        <div class="logo-footer left">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/instagram_logo.jpg" class="logo">
+
+        </div>
+
+        <div class="logo-footer left" style="padding-top: 23px; margin-right: 60px;">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/twitter-logo.png" class="logo" style="height: 57px;">
+
+        </div>
+
+        <div class="logo-footer left" style="padding-top: 0px;">
+
+            <img src="../Assets/ExampleDesign/Assets/Icons/contact/email.jpg" class="email-logo">
+
+        </div>
+
+        <div class="inder white copyright-info font-small right">
+
+            Sneaky Cleaners Ⓒ 2022
+
+        </div>
+
+    </div>
+
+</body>
+
+
+</html>
