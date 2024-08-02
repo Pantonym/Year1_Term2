@@ -1,0 +1,102 @@
+[
+    {
+        "Name": "Nike Devils",
+        "Price": 450,
+        "DaysToClean": 8,
+        "Rating": 5,
+        "Description": "Taking heavy inspiration from several bible verses, these sneakers are guaranteed to make you feel like you can take on the world! Officially sponsored by several artists, your life won't be complete until you get your hands on these amazing sneakers. But unfortunately, not even these sneakers are free from the grime and dirt that make their homes on your prized posessions. For a reasonable fee, and an even more reasonable cleaning time, we can smite the impurities from your Nike Devils.",
+        "Link": "../Assets/ExampleDesign/Assets/FeaturedSneakerHeader/im-322538.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Nike High Tops Red",
+        "Price": 350,
+        "DaysToClean": 4,
+        "Rating": 3,
+        "Description": "Converse isn't the only brand with phenominal high tops, as is shown by the Nike High Tops Red Edition Sneakers. These sneakers are loud in all the right ways, and will make you the star of any party, or even library, you go to! Our cleaning fees for these sneakers are the cheapest you'll find; with the highest quality as well.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/FeaturedScroller/download.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Nike Low Tops Black",
+        "Price": 250,
+        "DaysToClean": 5,
+        "Rating": 4,
+        "Description": "Discreet. Cool. Professional. All these words describe the Nike Low Tops Black Edition Sneakers quite well; but what we find describes them better is this: Affordable Quality. Because of this fact, we've made it one of our duties to keep this Affordable Quality consistent in regards to our cleaning services too.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/FeaturedScroller/images.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Nike Galaxies",
+        "Price": 300,
+        "DaysToClean": 5,
+        "Rating": 5,
+        "Description": "Nike never ceases to amaze, but the Nike GALAXIES Sneakers do more than just that. These sneakers use a blend of deep, vibrant purples and blues to form the outline of a magnificient galaxy (and at a fraction of the Price!). These sneakers are hard to clean, but we have found secret techniques to make them as shiny as when you first got them.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/galaxy.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Converse High Tops",
+        "Price": 400,
+        "DaysToClean": 9,
+        "Rating": 5,
+        "Description": "Chuck Taylors are a staple in the modern era, so what's better than the highest of quality Converse High Top Chuck Taylors! These shoes are infamous for how hard they are to clean- and how easy it is to damage them as you clean. Sneaky Cleaners would never do anything to hurt our customers, so we have a no-nonsense policy when cleaning these sneakers. Yes they take longer, but you'll cretainly sleep better!",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/ConverseHighTops.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Converse Low Tops",
+        "Price": 250,
+        "DaysToClean": 4,
+        "Rating": 2,
+        "Description": "Converse has a wide range of sneakers, and because we want to have as wide a range of products as possible, we have learned the ancient secrets of cleaning the infamous Cloth Converse Low Tops. They don't take long to clean, but they sure do give our cleaners a workout!",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/ConverseLowTops.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Leather Boots",
+        "Price": 550,
+        "DaysToClean": 9,
+        "Rating": 3,
+        "Description": "Leather is a hard thing to clean, which is why Sneaky Cleaners has invested in multiple state of the art leather cleaning machines to make your sneakers the cleanest they've been since they were first created. These leather boots are large and in charge, and have an extra layer of fame due to their bleached colour.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/LeatherChunkyBoots.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "New Balance Sneakers",
+        "Price": 50,
+        "DaysToClean": 2,
+        "Rating": 1,
+        "Description": "While these sneakers are scorned, we do not judge them based on their reputation. We judge them based on how many customers want them cleaned- and it turns out it's a lot! These sneakers may be known to some as 'uncomfortable' or 'ugly', but what everyone can agree on is that they are quick and effecient to clean.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/NewBalance.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Nike Valentines Day",
+        "Price": 375,
+        "DaysToClean": 8,
+        "Rating": 2,
+        "Description": "Nike celebrated love right there with you, and we just knew that we couldn't let these beautiful sneakers get dirty. Don't worry: we clean these sneakers with as much love as we can possibly get a hold of. Our staff takes the utmost care to keep them the same rosegold colour they're known for.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/ValentinesDayNike.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Pastel Sneakers",
+        "Price": 735,
+        "DaysToClean": 14,
+        "Rating": 5,
+        "Description": "The creators of these fantastic sneakers are still swimming in praise for the sleek, modern, and vibrant design of these Pastel Sneakers. They contain led lights to light up any situation, and as a bonus we will replace them when we clean these magnificient sneakers.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/Pastel.jfif",
+        "InCart": false
+    },
+    {
+        "Name": "Converse Yellow High Tops",
+        "Price": 245,
+        "DaysToClean": 6,
+        "Rating": 3,
+        "Description": "No matter what happens, we can always rely on Converse to keep giving us the best looking sneakers money can buy. The Yellow High Tops are no different, and are one of the most talked about sneakers of the modern day. They have cloth in stead of leather, which lends to the quick clean time.",
+        "Link": "../Assets/ExampleDesign/Assets/Sneakers/PageTwo/YellowConverse.jfif",
+        "InCart": false
+    }
+
+]

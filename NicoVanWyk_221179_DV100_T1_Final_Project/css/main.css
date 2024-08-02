@@ -1,48 +1,47 @@
-/*----Fonts*/
+/* Variables */
+:root {
+    --main: #EEE4E1;
+    --secondary: #0F0C24;
+    --black: black;
+    --white: white;
+}
 
+/*Fonts*/
 /*--Primary Font*/
-
 .goldman {
     font-family: 'Goldman', sans-serif;
     src: url("../Assets/Goldman,Inder/Goldman/Goldman-Regular.ttf");
 }
 
 /*--Secondary Font*/
-
 .inder {
     font-family: 'Inder', sans-serif;
     src: url("../Assets/Goldman,Inder/Inder/Inder-Regular.ttf");
 }
 
 /*--Standard Font Sizes*/
-
-.font-large {
-    font-size: 22px;
-}
-
-.font-small {
+.font_18 {
     font-size: 18px;
 }
 
-.font-header {
-    font-size: 26px;
-}
-
-/*--Custom Font Sizes*/
-
-.font-20 {
+.font_20 {
     font-size: 20px;
 }
 
-.font-24 {
+.font_22 {
+    font-size: 22px;
+}
+
+.font_24 {
     font-size: 24px;
 }
 
+.font_26 {
+    font-size: 26px;
+}
 
 /*----Colours*/
-
 /*--Main Colours*/
-
 .beige {
     color: #E4D4C8;
 }
@@ -52,7 +51,6 @@
 }
 
 /*--Background Colours*/
-
 .yellow {
     color: #FBE85E;
 }
@@ -66,16 +64,11 @@
 }
 
 /*--Other Colours*/
-
 .white {
     color: white;
 }
 
-
-
-
 /*----Universal Styling*/
-
 .right {
     float: right;
 }
@@ -90,29 +83,73 @@
     background-image: linear-gradient(rgba(251, 232, 94, 1), rgba(251, 232, 94, 0.3), rgba(50, 222, 243, 0.3), rgba(50, 222, 243, 1), rgba(50, 222, 243, 0.3), rgba(240, 70, 189, 0.3), rgba(240, 70, 189, 1), rgba(240, 70, 189, 0.3));
 }
 
-
 /*--Default tag styling*/
-
 a:hover {
     color: rgba(228, 212, 200, 0.5);
 }
 
+/* All pages layout */
+/* --Navbar */
+.navbar {
+    padding-top: 0% !important;
+    padding-bottom: 0% !important;
 
-/*--All pages layout */
-
-.nav-holder {
-    width: 1510px;
-    height: 100px;
-
-    background-color: #523A28;
+    height: 130px;
 }
 
-.logo-div {
-    height: 70px;
-    width: 70px;
+/* ----Navbar background */
+.navbar_bg {
+    background-color: var(--secondary);
 
-    padding-left: 20px;
-    padding-top: 15px;
+    transition: 0.5s ease;
+
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/* ----This is for the logo, as well as its hover to change colours */
+.nav_image {
+    width: 74px;
+    height: 74px;
+
+    margin-left: 50px;
+
+    background-image: url("../Assets/ExampleDesign/Logo/Logo.png");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* ----Navbar items */
+.nav_li_padding {
+    padding-top: 50px !important;
+}
+
+.nav_li_img_padding {
+    padding-top: 40px !important;
+}
+
+.nav-link {
+    /* ----Bootstrap Styling */
+    height: 100px;
+    width: auto;
+
+    padding-top: 34px;
+    padding-left: 100px;
+
+    margin-right: 40px;
+}
+
+.cart {
+    height: 60px;
+    width: 60px;
+
+    background-image: url("../Assets/ExampleDesign/Icons/cart.png");
+    background-repeat: no-repeat;
+
+    background-size: cover;
 }
 
 .logo {
@@ -122,37 +159,19 @@ a:hover {
     background-color: #523A28;
 }
 
-.nav-link {
-    height: 100px;
-    width: auto;
-
-    padding-top: 34px;
-    padding-left: 100px;
-}
-
-.cart {
-    height: 60px;
-    width: 60px;
-
-    background-image: url("../Assets/ExampleDesign/Assets/Icons/Other/shopping-cart.svg");
-    background-repeat: no-repeat;
-
-    background-size: cover;
-}
-
-.cart-div {
-    padding-right: 20px;
-    padding-top: 20px;
-}
-
-.bottom-bar {
-    height: 100px;
-    width: 1510px;
+/* Footer */
+.footer {
+    height: 130px;
+    width: 100%;
 
     background-color: black;
+
+    padding: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.logo-footer {
+.logo_footer {
     height: 70px;
     width: 70px;
 
@@ -162,16 +181,17 @@ a:hover {
     margin-right: 80px;
 }
 
-.email-logo {
+.email_logo {
     height: 100px;
     width: 100px;
 }
 
-.copyright-info {
+.copyright_info {
     padding-top: 40px;
     padding-right: 10px;
 }
 
+/*----Page 1 */
 #welcome-message {
     height: 70px;
     width: 100%;
@@ -179,12 +199,11 @@ a:hover {
     text-align: center;
 
     padding-top: 20px;
+
+    margin-top: 130px;
 }
 
-/*----Page 1 */
-
 /*--Featured Sneaker */
-
 #featured-sneaker {
     width: 1360px;
     height: 500px;
@@ -236,6 +255,9 @@ a:hover {
     position: relative;
 }
 
+#header-img:hover {
+    filter: brightness(50%);
+}
 
 /*--Featured Sneaker Rotators */
 
